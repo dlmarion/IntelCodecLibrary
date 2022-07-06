@@ -71,8 +71,8 @@ $(TARGET) : $(SRCS)
 jni:
 	@echo Generating jni header
 	$(call check,JAVA_HOME)
-	$(ECHO)$(JAVA_HOME)/bin/javah -d jni-header -cp ../../../target/classes \
-	com.intel.compression.jni.IntelCompressionCodecJNI
+	$(ECHO)$(JAVA_HOME)/bin/javac -h jni-header -cp ../../../target/classes \
+	../java/com/intel/compression/jni/IntelCompressionCodecJNI.java
 
 clean:
 	$(ECHO)rm -rf *.so *.o jni-header

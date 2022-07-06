@@ -39,15 +39,15 @@
     <basedir>./</basedir>
     <java.version>1.8</java.version>
     <maven.version>3.3.9</maven.version>
-    <scala.version>2.11.8</scala.version>
-    <scala.binary.version>2.11</scala.binary.version>
-    <spark.version>2.2.0</spark.version>
+    <scala.version>2.12.16</scala.version>
+    <scala.binary.version>2.12</scala.binary.version>
+    <spark.version>3.3.0</spark.version>
     <spark-scope>provided</spark-scope>
-    <hadoop-common.version>2.7.3</hadoop-common.version>
+    <hadoop-common.version>3.3.0</hadoop-common.version>
     <!--<hadoop-common.version>2.6.0-cdh5.10.1</hadoop-common.version>-->
-    <scalatest.version>2.2.6</scalatest.version>
-    <scalacheck.version>1.12.5</scalacheck.version> <!-- 1.13.0 appears incompatible with scalatest 2.2.6 -->
-    <scala-maven-plugin.version>3.2.2</scala-maven-plugin.version>
+    <scalatest.version>3.3.0-SNAP3</scalatest.version>
+    <scalacheck.version>1.16.0</scalacheck.version>
+    <scala-maven-plugin.version>4.6.3</scala-maven-plugin.version>
     <scalatest-maven-plugin.version>1.0</scalatest-maven-plugin.version>
     <scalastyle-maven-plugin.version>0.8.0</scalastyle-maven-plugin.version>
     <maven-compiler-plugin.version>3.6.1</maven-compiler-plugin.version>
@@ -154,11 +154,13 @@
       <artifactId>scala-reflect</artifactId>
       <version>${scala.version}</version>
     </dependency>
+<!--
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scala-actors</artifactId>
       <version>${scala.version}</version>
     </dependency>
+-->
     <dependency>
       <groupId>org.scala-lang</groupId>
       <artifactId>scalap</artifactId>
